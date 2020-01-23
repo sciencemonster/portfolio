@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="maintitle">포트폴리오</h1>
+    </header>
+    <div class="wrap">
+      <nav>
+        <ul class="navul">
+          <li>
+            <a href="#table">테이블 요소</a>
+          </li>
+          <li>
+            <a href="#form">폼 요소</a>
+          </li>
+          <li>
+            <a href="#list">리스트 요소</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h2 class="subtitle">구성 요소</h2>
+        <article>
+          <h3 class="navtitle" id="table">테이블 요소</h3>
+          <div class="article">
+            <table class="kid">
+              <caption>아동 사이즈</caption>
+              <colgroup>
+                <col class="kidfirstcol">
+                <col span="7" class="kidrestcol">
+                <col class="kidlastcol">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="2" scope="colgroup">구분</th>
+                  <th colspan="2" scope="colgroup" id="small">Small</th>
+                  <th colspan="2" scope="colgroup" id=medium>Medium</th>
+                  <th colspan="2" scope="colgroup" id="large">Large</th>
+                  <th scope="col" id="xlarge">X-Large</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan="3" scope="rowgroup" id="boys">미국 남아<br>[Boys 2-7]</th>
+                  <th scope="row" headers="boys" id="boysSize">사이즈</th>
+                  <td headers="small boys boysSize">2T</td>
+                  <td headers="small boys boysSize">3T</td>
+                  <td headers="medium boys boysSize">4T</td>
+                  <td headers="medium boys boysSize">4</td>
+                  <td headers="large boys boysSize">5</td>
+                  <td headers="large boys boysSize">6</td>
+                  <td headers="xlarge boys boysSize">7</td>
+                </tr>
+                <tr>
+                  <th scope="row" headers="boys" id="boysHeight">키</th>
+                  <td headers="small boys boysHeight">84-91</td>
+                  <td headers="small boys boysHeight">91-99</td>
+                  <td headers="medium boys boysHeight">91-99</td>
+                  <td headers="medium boys boysHeight">99-107</td>
+                  <td headers="large boys boysHeight">107-114</td>
+                  <td headers="large boys boysHeight">114-122</td>
+                  <td headers="xlarge boys boysHeight">122-130</td>
+                </tr>
+                <tr>
+                  <th scope="row" headers="boys" id="boysWeight">몸무게</th>
+                  <td headers="small boys boysWeight">13-15</td>
+                  <td headers="small boys boysWeight">14-15</td>
+                  <td headers="medium boys boysWeight">13-15</td>
+                  <td headers="medium boys boysWeight">14-15</td>
+                  <td headers="large boys boysWeight">19-21</td>
+                  <td headers="large boys boysWeight">20-23</td>
+                  <td headers="xlarge boys boysWeight">23-25</td>
+                </tr>
+                <tr>
+                  <th rowspan="3" scope="rowgroup" id="girls">미국 여아<br>[Girls 2-6X]</th>
+                  <th scope="row" headers="girls" id="girlsSize">사이즈</th>
+                  <td headers="small girls girlsSize">2T</td>
+                  <td headers="small girls girlsSize">3T</td>
+                  <td headers="medium girls girlsSize">4T</td>
+                  <td headers="medium girls girlsSize">4</td>
+                  <td headers="large girls girlsSize">5</td>
+                  <td headers="large girls girlsSize">6</td>
+                  <td headers="xlarge girls girlsSize">6X</td>
+                </tr>
+                <tr>
+                  <th scope="row" headers="girls" id="girlsHeight">키</th>
+                  <td headers="small girls girlsHeight">84-91</td>
+                  <td headers="small girls girlsHeight">91-99</td>
+                  <td headers="medium girls girlsHeight">91-99</td>
+                  <td headers="medium girls girlsHeight">99-107</td>
+                  <td headers="large girls girlsHeight">107-114</td>
+                  <td headers="large girls girlsHeight">114-122</td>
+                  <td headers="xlarge girls girlsHeight">122-130</td>
+                </tr>
+                <tr>
+                  <th scope="row" headers="girls" id="girlsWeight">몸무게</th>
+                  <td headers="small girls girlsWeight">13-15</td>
+                  <td headers="small girls girlsWeight">14-15</td>
+                  <td headers="medium girls girlsWeight">13-15</td>
+                  <td headers="medium girls girlsWeight">14-15</td>
+                  <td headers="large girls girlsWeight">19-21</td>
+                  <td headers="large girls girlsWeight">20-23</td>
+                  <td headers="xlarge girls girlsWeight">23-25</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="refund">
+              <caption>환불 가능 금액 조회</caption>
+              <colgroup>
+                <col class="refundfirstcol">
+                <col span="3" class="refundrestcol">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">구분</th>
+                  <th scope="col" id="refund">환불가능액</th>
+                  <th scope="col" id="fee">수수료</th>
+                  <th scope="col" id="trefund">총 환불금액</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" id="mgame">게임 보상금액</th>
+                  <td headers="refund mgame">100,000원</td>
+                  <td headers="fee mgame">1,000원</td>
+                  <td headers="trefund mgame">99,000원</td>
+                </tr>
+                <tr>
+                  <th scope="row" id="mmonth">월정액제 보상금액</th>
+                  <td headers="refund mmonth">10,000원</td>
+                  <td headers="fee mmonth">5,000원</td>
+                  <td headers="trefund mmonth">5,000원</td>
+                </tr>
+                <tr>
+                  <th scope="row" id="coin">코인</th>
+                  <td headers="refund coin">9,000원</td>
+                  <td headers="fee coin">500원</td>
+                  <td headers="trefund coin">8,500원</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th scope="row" id="total">총합계</th>
+                  <td headers="refund total">119,000원</td>
+                  <td headers="fee total">6,500원</td>
+                  <td headers="trefund total">112,500원</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </article>
+        <article>
+          <h3 class="navtitle" id="form">폼 요소</h3>
+          <div class="article">
+            <h4 class="listtitle">회원가입</h4>
+            <form class="mainform">
+              <fieldset>
+                <label for="userid">
+                  <span class="userid formtitle">아이디</span>
+                </label>
+                <input type="text" class="inputfont inputsize" id="userid">
+                <label for="userpw">
+                  <span class="formtitle">비밀번호</span>
+                </label>
+                <input type="password" class="inputfont inputsize" id="userpw">
+                <label for="name">
+                  <span class="formtitle">이름</span>
+                </label>
+                <input type="text" class="inputfont inputsize" id="name">
+                <label for="birth">
+                  <span class="formtitle">생년월일</span>
+                </label>
+                <div class="select">
+                  <select class="inputfont" id="birth">
+                    <option selected>년도</option>
+                  </select>
+                  <label for="mbirth" class="blind">생년월일</label>
+                  <select class="inputfont selectgap" id="mbirth">
+                    <option selected>월</option>
+                  </select>
+                  <label for="dbirth" class="blind">생년월일</label>
+                  <select class="inputfont selectgap" id="dbirth">
+                    <option selected>일</option>
+                  </select>
+                </div>
+                <span class="formtitle">성별</span>
+                <input type="radio" name="gender" id="male">
+                <label for="male" class="inputfont male">남자</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="inputfont">여자</label>
+                <label for="email">
+                  <span class="formtitle">이메일</span>
+                </label>
+                <input type="email" placeholder="이메일 주소에 '@'를 포함해주세요." class="inputfont inputsize" id="email">
+                <label for="mobile">
+                  <span class="formtitle">휴대전화</span>
+                </label>
+                <div class="mobile">
+                  <input type="number" placeholder="숫자만 입력해주세요" class="inputfont inputsizemobile" id="mobile">
+                  <button type="button" class="buttoncertify">인증번호 받기</button>
+                </div>
+                <label for="certify" class="blind">인증번호</label>
+                <input type="number" placeholder="인증번호를 입력해주세요." class="inputfont inputsize" id="certify">
+                <span class="formtitle">취미</span>
+                <input type="checkbox" name="hobby" id="exercise">
+                <label for="exercise" class="inputfont hobby">운동</label>
+                <input type="checkbox" name="hobby" id="cook">
+                <label for="cook" class="inputfont hobby">요리</label>
+                <input type="checkbox" name="hobby" id="trip">
+                <label for="trip" class="inputfont hobby">여행</label>
+                <input type="checkbox" name="hobby" id="game">
+                <label for="game" class="inputfont hobby">게임</label>
+                <input type="checkbox" name="hobby" id="computer">
+                <label for="computer" class="inputfont hobby">컴퓨터</label>
+                <input type="checkbox" name="hobby" id="music">
+                <label for="music" class="inputfont hobby">음악</label>
+                <input type="checkbox" name="hobby" id="movie">
+                <label for="movie" class="inputfont hobby">영화</label>
+                <input type="checkbox" name="hobby" id="book">
+                <label for="book" class="inputfont hobby">독서</label>
+                <label for="hello">
+                  <span class="formtitle">가입인사</span>
+                </label>
+                <textarea rows="10" class="inputfont" id="hello"></textarea>
+                <button type="button" class="buttonjoin">가입하기</button>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+        <article>
+          <h3 class="navtitle" id="list">리스트 요소</h3>
+          <div class="article">
+            <h4 class="listtitle">'프로젝트' 사전 검색 결과</h4>
+            <div class="project">
+              <h5>프로젝트</h5>
+              <dl>
+                <dt class="projecttitle">
+                    프로젝트 <span class="bluefont">영양학사전</span>
+                </dt>
+                <dd>
+                  연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획. 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.
+                </dd>
+                <dt class="projecttitle">
+                    프로젝트 <span class="bluefont">Basic 중학생을 위한 기술, 가정 용어사전</span>
+                </dt>
+                <dd>
+                  어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업.
+                </dd>
+              </dl>
+            </div>
+            <h4 class="listtitle">실시간 검색어</h4>
+            <ol class="ollist">
+              <li>
+                <a href="#">입추</a>
+              </li>
+              <li>
+                <a href="#">런닝맨 유재석</a>
+              </li>
+              <li>
+                <a href="#">런닝맨</a>
+              </li>
+              <li>
+                <a href="#">소나기</a>
+              </li>
+              <li>
+                <a href="#">주간 날씨</a>
+              </li>
+              <li>
+                <a href="#">깔라만시</a>
+              </li>
+              <li>
+                <a href="#">내 아이디는 강남미인</a>
+              </li>
+              <li>
+                <a href="#">차은우</a>
+              </li>
+              <li>
+                <a href="#">한국사능력검정시험</a>
+              </li>
+              <li>
+                <a href="#">맛있는 녀석들</a>
+              </li>
+            </ol>
+            <h4 class="listtitle">쿠키 이용안내</h4>
+            <div class=cookieul>
+              <ul>
+                <li>
+                  <strong>
+                    <span class="bluefont">웹툰 작품</span>은 쿠키를 사용하여 대여/구매 하실 수 있습니다.
+                  </strong>
+                </li>
+                <li>
+                  쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <span class="redfont">유효기간은 지급 후 90일</span>입니다.
+                </li>
+                <li>
+                  구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <a href="#" class="bluefont">구매내역</a>에서 직접 구매 취소할 수 있습니다.
+                </li>
+                <li>
+                  일부 사용 후 잔여 쿠키에 대한 구매 취소는 고객센터를 통해 가능하며, 쿠키 구매 시 지급된 보너스 쿠키를 사용한 경우에는 해당 분량을 제외하고 환불됩니다.
+                </li>
+                <li>
+                  쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.
+                </li>
+              </ul>
+              <a href="#" class="bluefont cookielink">쿠키 이용약관</a>
+            </div>
+            <h4 class="listtitle">뉴스</h4>
+            <ul class="newsul">
+              <li class="floatfirst">
+                <a href="#">
+                  <img src="./image/thumbnail1.jpg" width="80" height="80" alt="">
+                </a>
+                <div class="float">
+                  <a href="#">
+                    <p class="newstitle">[날씨] 내일도 35도 안팎 폭염・내륙 소나기⋯습도 높아 후텁지근</p>
+                  </a>
+                  <p>
+                    오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요. 동해안을 제 외한 전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에 서울과 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다. 내일도 대기가 불안정해지면서 오후에 내륙에는 소나기가 지나는 곳이 있겠습니다.
+                  </p>
+                </div>
+              </li>
+              <li class="clear">
+                <a href="#">
+                  <p class="newstitle">[펫카드] 강아지 중성화가 필요한 이유</p>
+                </a>
+                <p>
+                  (서울=뉴스1) 최서윤 기자,방은영 디자이너 = 강아지 중성화 수술을 놓고 찬반이 팽팽하게 엇갈린다. 많은 사람들은 사람들과 공존하려면 개체수 조절을 위해 필요하다고 주장한다. 그러나 어떤 사람들은 인위적인 수술은 안된다며 반대한다.
+                </p>
+              </li>
+              <li class="floatlast">
+                <a href="#">
+                  <img src="./image/thumbnail1.jpg" width="80" height="80" alt="">
+                </a>
+                <div class="float">
+                  <a href="#">
+                    <p class="newstitle">다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어</p>
+                  </a>
+                  <p>
+                    복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당, 수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.5% 정도로 적게 들어 단맛이 강하다. 복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다. 포만감에 비해 열량이 적은 편이어서 다이어트를 하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <h4 class="listtitle">웹툰</h4>
+            <ul class="webtoonul">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>하루 3컷</h5>
+                      <p class="websubtitle">17화 편리하게 피곤하게</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>
+                        <span class="cut">컷툰</span> 유미의 세포들
+                      </h5>
+                      <p class="websubtitle">326화 미래에서 온 텔레파시</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>이말년씨리즈 2018</h5>
+                      <p class="websubtitle">58화 공포의 떡볶이</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>
+                        <span class="smart">스마트툰</span> 덴마
+                      </h5>
+                      <p class="websubtitle">195화 1.다이크(195)</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>
+                        <span class="cut">컷툰</span> 1인용 기분
+                      </h5>
+                      <p class="websubtitle">20화 평가</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img src="./image/thumbnail2.jpg" width="285" height="140" alt="">
+                    <figcaption>
+                      <h5>찬란하지 않아도 괜찮아</h5>
+                      <p class="websubtitle">56화 숨길 수 없어요.</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <address>주소: 경기도 성남시 분당구, E-MAIL: <a href="mailto:honggildong@naver.com">honggildong@naver.com</a></address>
+      <div>Copyright &copy; Hong Gil Dong. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>

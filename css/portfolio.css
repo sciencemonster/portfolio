@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: NanumGothic, "나눔 고딕", Dotum, "돋움", sans-serif;
+}
+
+.blind {
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
+header {
+  background-color: #000;
+  height: 120px;
+}
+
+.wrap {
+  margin: 0 auto;
+  padding: 40px;
+  width: 1000px;
+}
+
+.maintitle {
+  color: #fff;
+  font-size: 40px;
+  line-height: 120px;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.subtitle{
+  border-bottom: 1px solid #454545;
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.navtitle {
+  background-color: #f7f7f7;
+  border: 1px solid #d1d1d1;
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 15px;
+  line-height: 46px;
+  height: 46px;
+}
+
+.listtitle {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navul:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.navul > li {
+  border: 1px solid #d1d1d1;
+  float: left;
+  line-height: 33px;
+  text-align: center;
+  width: 322px;
+  height: 33px;
+}
+
+.navul li + li {
+  margin-left: 14px;
+}
+
+.navul a {
+  color: #000;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navul a:hover {
+  border: 1px solid #454545;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 40px;
+}
+
+article {
+  margin-top: 30px;
+}
+
+.article {
+  border: 1px solid #d1d1d1;
+  border-top-width: 0;
+  font-size: 12px;
+  margin: 0;
+  padding: 30px;
+}
+
+.kid {
+  margin-bottom: 50px;
+}
+
+.kid, .refund {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.kid > thead, .refund > thead {
+  background-color: #fbfbfb;
+}
+
+.kid caption, .refund caption {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.kid td {
+  text-align: center;
+}
+
+.kid th, .kid td, .refund th, .refund td {
+  color: #555;
+  font-size: 12px;
+  height: 30px;
+}
+
+.kid, .kid th, .kid td {
+  border: 1px solid #e4e4e4;
+}
+
+.kidfirstcol {
+  width: 19%;
+}
+
+.kidrestcol {
+  width: 9%;
+}
+
+.kidlastcol {
+  width: 18%;
+}
+
+.refund > thead {
+  border-top: 2px solid #a5a5a5;
+}
+
+.refund > thead, .refund > tfoot {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.refund > thead th {
+  font-weight: normal;
+}
+
+.refund > tbody th {
+  font-weight: normal;
+}
+
+.refund > tfoot {
+  border-top: 1px solid #a5a5a5;
+}
+
+.refund > tfoot td {
+  font-weight: bold;
+}
+
+.refund > tbody td, .refund > tfoot td {
+  padding-right: 60px;
+  text-align: right;
+}
+
+.refundfirstcol {
+  width: 40%;
+}
+
+.refundrestcol {
+  width: 20%;
+}
+
+.mainform fieldset{
+  background-color: #fbfbfb;
+  border: 1px solid #e4e4e4;
+  margin: 0;
+  padding: 20px;
+}
+
+.formtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.userid {
+  margin-top: 0;
+}
+
+.inputfont {
+  font-size: 12px;
+}
+
+.inputsize {
+  width: 892px;
+}
+
+.inputsize, .mainform select, .inputsizemobile, .buttonjoin {
+  height: 30px;
+}
+
+.select {
+  height: 30px;
+}
+
+.select:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.mainform select {
+  float: left;
+  width: 292px;
+}
+
+.selectgap {
+  margin-left: 10px;
+}
+
+.male, .hobby {
+  margin-right: 59px;
+}
+
+.inputsizemobile {
+  float: left;
+  width: 732px;
+}
+
+button[class^="button"] {
+  background-color: #4ec53d;
+  border: 1px solid #08a600;
+  color: #fff;
+}
+
+button[class^="button"]:hover {
+  cursor: pointer;
+}
+
+.mobile {
+  margin-bottom: 5px;
+  height: 36px;
+}
+
+.mobile:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.buttoncertify {
+  float: left;
+  font-size: 12px;
+  margin-left: 10px;
+  width: 150px;
+  height: 36px;
+}
+
+.mainform textarea {
+  margin-bottom: 10px;
+  width: 890px;
+}
+
+.buttonjoin {
+  font-size: 16px;
+  width: 100%;
+}
+
+.project, .ollist, .cookieul, .newsul, .webtoonul {
+  border: 1px solid #e4e4e4;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.project > h5 {
+  font-size: 32px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.projecttitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0 5px;
+}
+
+.bluefont {
+  color: #559bfa;
+  font-size: 12px;
+}
+
+.project dd {
+  font-size: 12px;
+  margin: 0;
+}
+
+.ollist {
+  counter-reset: section;
+  display: inline-block;
+  list-style-position: inside;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 20px 100px 20px 20px;
+}
+
+.ollist > li {
+  line-height: 30px;
+  height: 30px;
+
+}
+
+.ollist li:before {
+  border: 1px solid #e0e0e0;
+  color: #666;
+  content: counter(section);
+  counter-increment: section;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 17px;
+  margin-right: 5px;
+  text-align: center;
+  width: 17px;
+  height: 17px;
+}
+
+.ollist a {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.ollist a:hover {
+  text-decoration: underline;
+}
+
+.cookieul > ul {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.cookieul li {
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+}
+
+.redfont {
+  color: #ed5336;
+}
+
+.cookielink {
+  margin-left: 16px;
+}
+
+.newsul, .webtoonul {
+  list-style-type: none;
+}
+
+.newsul img {
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.newsul .newstitle {
+  color: #00c;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  height: 20px;
+}
+
+.newsul p {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
+.floatfirst {
+  margin-bottom: 20px;
+}
+
+.float {
+  height: 80px;
+}
+
+.clear {
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
+  padding: 20px 0;
+}
+
+.floatlast {
+  margin-top: 20px;
+}
+
+.webtoonul {
+  margin-bottom: 0;
+  padding-right: 21px;
+}
+
+.webtoonul:after {
+  clear :both;
+  content: "";
+  display: block;
+}
+
+.webtoonul li {
+  float: left;
+}
+
+.webtoonul li + li {
+  margin-left: 20px;
+}
+
+.webtoonul li:nth-child(4n) {
+  margin-left: 0;
+}
+
+.webtoonul a {
+  text-decoration: none;
+}
+
+.webtoonul a:hover {
+  text-decoration: underline;
+}
+
+.webtoonul img {
+  width: 285px;
+  height: 140px;
+}
+
+.webtoonul figure {
+  margin: 0;
+}
+
+.webtoonul h5 {
+  color: #000;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.websubtitle {
+  color: #000;
+  font-size: 12px;
+  margin: 0 0 20px 0;
+}
+
+.cut, .smart {
+  color: #fff;
+  font-size: 10px;
+}
+
+.cut {
+  background-color: #80c83d;
+  border: 1px solid #71b036;
+}
+
+.smart {
+  background-color: #ec5336;
+  border: 1px solid #df4e28;
+}
+
+footer {
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+  padding: 40px;
+}
+
+address {
+  color: #999;
+  font-style: normal;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+address > a {
+  color: #999;
+  display: inline;
+  font-style: normal;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+footer > div {
+  font-size: 12px;
+}
